@@ -1,3 +1,10 @@
+# Libs
+json-c*
+
+# Useless
+output
+debug
+
 # Prerequisites
 *.d
 
