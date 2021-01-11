@@ -1,4 +1,4 @@
-# WILDENGINE
+# WILDENGINE - A GAME BOOK ENGINE
 
 WILDENGINE is an engine that enables you to create game books with a simple json file
 
