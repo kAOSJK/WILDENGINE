@@ -1,0 +1,163 @@
+{
+  "languages": ["English", "Francais"],
+  "languages_code": ["", "fr"],
+  "default_language": "English",
+  "menu": ["Story", "Mini-game", "Language", "Credits", "Quit"],
+  "menu_fr": ["Histoire", "Mini-jeu", "Langue", "Credits", "Quitter"],
+  "menu_drawing_position": 1,
+  "max_name_size": 10,
+  "agility_speed": 100000,
+  "text_speed_0": 10000,
+  "text_speed_1": 100,
+  "story_writer": "Benoit",
+  "entry_keys": ["flash1", "quit"],
+  "story_fr": [
+    {
+      "test french": [
+        {
+          "key": "flash1",
+          "text": "it...$always...$i's's..'.'.'.'.'.'.'.'.'.'......''$...$Hello what you... wan't to do ?$Hello what you wan't to do ? Hello wha't you want to d'o ? Hello what you want to ? Hello what you want to do he?$Hello what you want to do ?$Hello what you want to do ?$Hello what you wan't to do ?$Hello what you wan't to do ? Hello what you want to do ?",
+          "upgrade": { "skill_type": "first_choice", "add_value": 11 },
+          "date": {
+            "day": 18,
+            "month": "janvier",
+            "year": 1980
+          },
+          "next_key": "flash2"
+        },
+        {
+          "key": "flash2",
+          "text": "test ici french",
+          "upgrade": { "skill_type": "first_choice", "add_value": 11 },
+          "date": {
+            "day": 20,
+            "month": "janvier",
+            "year": 1980
+          },
+          "next_key": "flash3"
+        },
+        {
+          "key": "flash3",
+          "text": "ok might be the end",
+          "upgrade": { "skill_type": "first_choice", "add_value": 11 },
+          "date": {
+            "day": 22,
+            "month": "janvier",
+            "year": 1980
+          },
+          "next_key": ""
+        }
+      ]
+    }
+  ],
+  "story": [
+    {
+      "introduction": [
+        {
+          "key": "flash1",
+          "text": "it...$always...$i's's..'.'.'.'.'.'.'.'.'.'......''$...$Hello what you... wan't to do ?$Hello what you wan't to do ? Hello wha't you want to d'o ? Hello what you want to ? Hello what you want to do he?$Hello what you want to do ?$Hello what you want to do ?$Hello what you wan't to do ?$Hello what you wan't to do ? Hello what you want to do ?",
+          "upgrade": { "skill_type": "first_choice", "add_value": 11 },
+          "date": {
+            "day": 18,
+            "month": "janvier",
+            "year": 1980
+          },
+          "next_key": "flash2"
+        },
+        {
+          "key": "flash2",
+          "text": "He'll'o ma'te ?...",
+          "choices": [
+            { "text": "courr'ir", "next_key": "flash3" },
+            { "text": "quitt'ez", "next_key": "flash3" },
+            {
+              "text": "dance",
+              "needed_skill": "agility",
+              "needed_value": 7,
+              "next_key": "dance"
+            }
+          ]
+        },
+        {
+          "key": "flash3",
+          "text": "Bye... mat'e$te'sting here$yu'p & is her'e !...",
+          "date": {
+            "day": 20,
+            "month": "janvier",
+            "year": 1980
+          },
+          /*
+          "upgrade": { "skill_type": "trust", "add_value": 7 },*/
+          "test": {
+            "type": "agility",
+            "difficulty": 7,
+            "win_next_key": "won_agi0",
+            "lose_next_key": "lost_agi0"
+          }
+        },
+        {
+          "key": "won_agi0",
+          "text": "You won fr'eedom....",
+          "next_key": ""
+        },
+        {
+          "key": "lost_agi0",
+          "text": "You are dead cuz you' lose t'he t'es't....",
+          "next_key": ""
+        },
+        {
+          "key": "quit",
+          "text": "Qui'tte la pa'rtie",
+          "next_key": ""
+        },
+        {
+          "key": "run",
+          "text": "Vou's courrez' tres v'ite!",
+          "next_key": ""
+        },
+        {
+          "key": "dance",
+          "text": "Vou's danse'z bien!",
+          "next_key": ""
+        }
+      ]
+    },
+    {
+      "part 1": [
+        {
+          "key": "flash7",
+          "text": "Hello' what you ...wan't to d'o ?",
+          "date": {
+            "day": 31,
+            "month": "janvier",
+            "year": 1980
+          },
+          "choices": [
+            { "text": "!run", "next_key": "run" },
+            { "text": "!quit", "next_key": "quit" }
+          ]
+        },
+        {
+          "key": "run",
+          "text": "Vou's courre'z",
+          "date": {
+            "day": 23,
+            "month": "december",
+            "year": 1980
+          },
+          "next_key": ""
+        },
+        {
+          "key": "quit",
+          "text": "mauvais",
+          "date": {
+            "day": 30,
+            "month": "janvier",
+            "year": 1980
+          },
+          "next_key": "flash7"
+        }
+      ]
+    }
+  ]
+}
