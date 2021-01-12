@@ -294,7 +294,7 @@ The object take atleast two strings
 * A string named "text" that is the text to display on player's screen.
 
 Note that you have to add your first part's key for each chapter in the [entry_keys key](#chapter-entry-part) in the settings.
-
+Note that you the game can only display ASCII characters, so pay attention writting characters on the "text" key on your part.
 
 ```
 "story": [
@@ -416,7 +416,10 @@ Each object take two strings
 
 Note that you can't combine choices with [next_key](#add-next-key) or [test](#add-test).
 
-Also note that you can put a maximum of six object in the choices key, if you add more object, choices could be displayed badly.
+Note that you can put a maximum of six object in the choices key, if you add more object, choices could be displayed badly.
+
+Note that you the game can only display ASCII characters, so pay attention writting characters on the "text" key on your choice object.
+
 
 ```
 "story": [
@@ -536,4 +539,4 @@ Note that you can't combine choices with [next_key](#add-next-key) or [choices](
 
 ---
 
-*Last updated : 11 January 2021*
+*Last updated : 12 January 2021*
