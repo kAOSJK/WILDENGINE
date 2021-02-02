@@ -1,6 +1,6 @@
 # WILDENGINE - A GAME BOOK ENGINE
 
-WILDENGINE is an engine that enables you to create game books with a simple json file
+WILDENGINE is an engine that help you creating a terminal based game books with a simple json file
 
 ## Install (need git package)
 
