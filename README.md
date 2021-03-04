@@ -14,6 +14,9 @@ Create a json file named "data.json" in the data folder
 
 Create your own story from that file !
 
+### Documentation
+For detailed information on using WILDENGINE, refer to the [docs](https://kaosjk.github.io/WILDENGINE/).
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
